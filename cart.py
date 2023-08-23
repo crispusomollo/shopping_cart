@@ -49,12 +49,19 @@ while True:
         
         ondoa = input(" Type in the item you would like to remove from cart: ")
 
-        if ondoa not in kikapu:
+        if ondoa == '':
+            print()
+            print("You have not entered an item")
+            continue
+
+        elif ondoa not in kikapu:
+            print()
             print('That item is not in your cart')
             continue
         else:
             kikapu.pop(ondoa)
             #kikapu.remove(ondoa)
+            print()
             print(f" {ondoa} has been removed from your cart" )
  
     if option == 4:
