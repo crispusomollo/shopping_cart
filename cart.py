@@ -1,7 +1,7 @@
 import pprint
 
 kikapu = {}
-print("This is a Shopping Cart!")
+print("This is a very simple Shopping Cart!")
  
 while True:
     print()
