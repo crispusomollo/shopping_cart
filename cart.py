@@ -1,3 +1,5 @@
+import pprint
+
 kikapu = {}
 print("This is a Shopping Cart!")
  
@@ -37,13 +39,13 @@ while True:
             print(" There are no Items in your cart!")
         else:
             print("These are the items in your shopping cart:")
-            print('------------------------------------------')
+            print('-' * 45)
             for bidhaa in kikapu:
                 print(f" {bidhaa} - KShs {kikapu [bidhaa]}")
             #for bidhaa in range(len(kikapu)):
                 #print('Item' + str(bidhaa) + ' in the cart is: ' + kikapu[bidhaa])
-            print('------------------------------------------')
-            print(kikapu)
+            print('-' * 45)
+            pprint.pprint(kikapu)
             
     if option == 3:
         
@@ -53,10 +55,11 @@ while True:
             print()
             print("You have not entered an item")
             continue
-
         elif ondoa not in kikapu:
             print()
-            print('That item is not in your cart')
+            print('That item is not in your cart. Below are items in the cart:')
+            print()
+            pprint.pprint(kikapu)
             continue
         else:
             kikapu.pop(ondoa)
@@ -80,9 +83,9 @@ while True:
                 jumla = jumla - discount
                 print()
                 print(f" Discount : {discount}")
-                print('----------------------------')
+                print('-' * 30)
                 print(f"  Total cost: KShs {jumla} ")
-                print('----------------------------')
+                print('-' * 30)
             elif jumla >= 20000:
                 discount = jumla * 0.06
                 jumla = jumla - discount
@@ -109,4 +112,8 @@ while True:
         print ("Thank you for shopping with us.")
         #quit()
         break
+    
+    #else:
+        #print("That is not a valid entry. Try again")
+        #break
 
