@@ -45,7 +45,8 @@ while True:
         if bidhaa == 0:
             #ujumbe = colored('There are no items in your cart!', 'red', attrs=['reverse', 'blink'])
             #print(ujumbe)
-            print("\033[1;32m There are no items in your cart!  \n")
+            #print("\033[1;32m There are no items in your cart!  \n")
+            print(" There are no items in your cart!  \n")
         else:
             print("These are the items in your shopping cart:")
             print('-' * 45)
