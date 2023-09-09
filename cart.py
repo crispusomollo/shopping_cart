@@ -13,22 +13,24 @@ while True:
     print ("5. Quit the program! ")
   
     print()
-    option = int(input(" Type in a number to proceed "))
+    chaguo = int(input(" Type in a number to proceed "))
     print()
 
     #options = ['1','2','3','4','5']
-    #if option not in options:
-        #print('That option is not valid. Enter either 1, 2, 3, 4 or 5')
+    chaguzi = (1,2,3,4,5)
+    if chaguo not in chaguzi:
+        print('That option is not valid. Enter either 1, 2, 3, 4 or 5')
         #continue
+        #break
     
-    if option == 1:
+    if chaguo == 1:
         
         bidhaa = input(" What would you like to add to your cart? ")
         shingapi = float(input(" Type in the price of the item added: "))
         kikapu [bidhaa] = shingapi
         print(f" {bidhaa} costing KShs {shingapi} has been added to cart.")
  
-    if option == 2:
+    if chaguo == 2:
         
         bidhaa = 0
 
@@ -47,7 +49,7 @@ while True:
             print('-' * 45)
             pprint.pprint(kikapu)
             
-    if option == 3:
+    if chaguo == 3:
         
         ondoa = input(" Type in the item you would like to remove from cart: ")
 
@@ -67,7 +69,7 @@ while True:
             print()
             print(f" {ondoa} has been removed from your cart" )
  
-    if option == 4:
+    if chaguo == 4:
         
         jumla = 0
         
@@ -79,26 +81,26 @@ while True:
             print("Your cart is empty!")
         else:
             if jumla >= 50000:
-                discount = jumla * 0.09
-                jumla = jumla - discount
+                punguzo = jumla * 0.09
+                jumla = jumla - punguzo
                 print()
-                print(f" Discount : {discount}")
+                print(f" Discount : {punguzo}")
                 print('-' * 30)
                 print(f"  Total cost: KShs {jumla} ")
                 print('-' * 30)
             elif jumla >= 20000:
-                discount = jumla * 0.06
-                jumla = jumla - discount
+                puguzo = jumla * 0.06
+                jumla = jumla - punguzo
                 print()
-                print(f" Discount : {discount}")
+                print(f" Discount : {punguzo}")
                 print('----------------------------')
                 print(f"  Total cost: KShs {jumla} ")
                 print('----------------------------')   
             elif jumla >= 10000:
-                discount = jumla * 0.03
-                jumla = jumla - discount
+                punguzo = jumla * 0.03
+                jumla = jumla - punguzo
                 print()
-                print(f" Discount : {discount}")
+                print(f" Discount : {punguzo}")
                 print('----------------------------')
                 print(f"  Total cost: KShs {jumla} ")
                 print('----------------------------')
@@ -107,7 +109,7 @@ while True:
                 print(f"  Total cost: KShs {jumla} ")
                 print('----------------------------')
  
-    if option == 5:
+    if chaguo == 5:
         
         print ("Thank you for shopping with us.")
         #quit()
@@ -116,4 +118,3 @@ while True:
     #else:
         #print("That is not a valid entry. Try again")
         #break
-
