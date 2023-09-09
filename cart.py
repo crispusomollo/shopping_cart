@@ -1,4 +1,9 @@
+
 import pprint
+import sys
+#from termcolor import colored
+#from colorama import Fore, Back, Style
+#from colored import fg
 
 kikapu = {}
 print("This is a very simple Shopping Cart!")
@@ -38,7 +43,9 @@ while True:
             None
             
         if bidhaa == 0:
-            print(" There are no Items in your cart!")
+            #ujumbe = colored('There are no items in your cart!', 'red', attrs=['reverse', 'blink'])
+            #print(ujumbe)
+            print("\033[1;32m There are no items in your cart!  \n")
         else:
             print("These are the items in your shopping cart:")
             print('-' * 45)
@@ -119,4 +126,3 @@ while True:
         #print("That is not a valid entry. Try again")
         #break
 
-        
