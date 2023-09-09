@@ -1,7 +1,6 @@
-
-import pprint
 import sys
-#from termcolor import colored
+import pprint
+from termcolor import colored
 #from colorama import Fore, Back, Style
 #from colored import fg
 
@@ -21,7 +20,7 @@ while True:
     chaguo = int(input(" Type in a number to proceed "))
     print()
 
-    #options = ['1','2','3','4','5']
+    #chaguzi = ['1','2','3','4','5']
     chaguzi = (1,2,3,4,5)
     if chaguo not in chaguzi:
         print('That option is not valid. Enter either 1, 2, 3, 4 or 5')
@@ -43,10 +42,10 @@ while True:
             None
             
         if bidhaa == 0:
-            #ujumbe = colored('There are no items in your cart!', 'red', attrs=['reverse', 'blink'])
-            #print(ujumbe)
+            ujumbe = colored('There are no items in your cart!', 'red', attrs=['reverse', 'blink'])
+            print(ujumbe)
             #print("\033[1;32m There are no items in your cart!  \n")
-            print(" There are no items in your cart!  \n")
+            #print(" There are no items in your cart!  \n")
         else:
             print("These are the items in your shopping cart:")
             print('-' * 45)
