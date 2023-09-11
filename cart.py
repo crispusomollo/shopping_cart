@@ -9,7 +9,7 @@ print("This is a very simple Shopping Cart!")
  
 while True:
     print()
-    print ("Please type in one of these options: ")
+    print ("Pick one option ")
     print ("1. Add your item ")
     print ("2. View your cart ")
     print ("3. Remove an item: ")
@@ -23,7 +23,7 @@ while True:
     #chaguzi = ['1','2','3','4','5']
     chaguzi = (1,2,3,4,5)
     if chaguo not in chaguzi:
-        print('That option is not valid. Enter either 1, 2, 3, 4 or 5')
+        print('Not valid. Enter either 1, 2, 3, 4 or 5')
         #continue
         #break
     
