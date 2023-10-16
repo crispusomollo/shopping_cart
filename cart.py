@@ -32,6 +32,7 @@ while True:
         bidhaa = input(" What would you like to add to your cart? ")
         shingapi = float(input(" Type in the price of the item added: "))
         kikapu [bidhaa] = shingapi
+        print()
         print(f" {bidhaa} costing KShs {shingapi} has been added to cart.")
  
     if chaguo == 2:
