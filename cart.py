@@ -1,6 +1,6 @@
 import sys
 import pprint
-from termcolor import colored
+#from termcolor import colored
 #from colorama import Fore, Back, Style
 #from colored import fg
 
