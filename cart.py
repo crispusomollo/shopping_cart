@@ -1,4 +1,8 @@
 #!/bin/env python3
+"""
+This is a simple shopping cart developed by Chris Origi
+"""
+
 
 import sys
 import pprint
@@ -6,11 +10,13 @@ import pprint
 #from colorama import Fore, Back, Style
 #from colored import fg
 
+"""Let's start by initializing our shopping cart"""
 kikapu = {}
 print("This is a very simple Shopping Cart!")
  
 while True:
     print()
+    '''Create a menu'''
     print ("Pick one option ")
     print ("1. Add your item ")
     print ("2. View your cart ")
@@ -19,6 +25,7 @@ while True:
     print ("5. Quit the program! ")
   
     print()
+    '''Restrict the users to only key in a digit only'''
     chaguo = int(input(" Type in a number to proceed "))
     print()
 
